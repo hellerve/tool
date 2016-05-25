@@ -1,0 +1,15 @@
+(module "tool"
+  (export
+    `("build" ,build))
+
+  (readme (zeps:get-template "README.md"))
+  (main (zeps:get-template "main.zp"))
+  (info (zeps:get-template "module.zp"))
+
+  (build (lambda (name)
+    (begin
+      (load "mustache/mustache")
+      (import-all "mustache")
+      (zeps:build-template "README.md" (mustache:template readme (make-hash "name" name)))
+      (zeps:build-template (++ name ".zp") (mustache:template main (make-hash "name" name)))
+      (zeps:build-template "module.zp" (mustache:template info (make-hash "name" name)))))))

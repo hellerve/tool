@@ -1,0 +1,16 @@
+#{:name "tool" 
+  :version "0.1.0" 
+  :license "GPLv2" 
+  :entry-point "tool.zp" 
+  :type :template
+  :tests []
+  :author #{:name "Veit Heller" 
+            :email "veit@veitheller.de" 
+            :github "@hellerve"}
+  :location #{:github "hellerve/tool" 
+              :zpr "tool"}
+  :zepto #{:version :any
+           :ez #f
+           :bz #f}
+  :dependencies ("mustache@1.0.0")
+  :dev-dependencies ()}

@@ -1,0 +1,14 @@
+#{:name "{{name}}" 
+  :version "0.0.1" 
+  :license "GPLv2" 
+  :type :tool
+  :entry-point "{{name}}.zp"
+  :tests []
+  :author #{:name "Alyssa P. Hacker" 
+            :email "alyssahacks@{{name}}.com" 
+            :github "@alyssap"}
+  :zepto #{:version :any
+           :ez #f
+           :bz #f}
+  :dependencies ()
+  :dev-dependencies ()}

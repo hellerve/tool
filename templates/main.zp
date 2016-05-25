@@ -1,0 +1,4 @@
+(define (main) "TODO: write a program, take over the world"
+  (error "TODO"))
+
+(main)
