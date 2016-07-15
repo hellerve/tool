@@ -12,5 +12,5 @@
   :zepto #{:version :any
            :ez #f
            :bz #f}
-  :dependencies ("mustache@1.0.0")
+  :dependencies ("zepto-lang/mustache")
   :dev-dependencies ()}
