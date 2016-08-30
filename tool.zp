@@ -7,6 +7,15 @@
   (info (zeps:get-template "module.zp"))
 
   (build (lambda (name)
+    "builds a tool package. It will generate a README, a minimal module.zp file
+     and a module.
+
+     This function is called by zeps.
+
+     params:
+      - name: the package name
+     complexity: O(1)
+     returns: nil"
     (begin
       (load "mustache/mustache")
       (import-all "mustache")
